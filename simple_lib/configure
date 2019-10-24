@@ -1,0 +1,4 @@
+ls "$EXT_BUILD_DEPS/lib"
+echo "CXXFLAGS = $CXXFLAGS" > Makefile
+echo "LDFLAGS = $LDFLAGS" >> Makefile
+cat Makefile.in >> Makefile

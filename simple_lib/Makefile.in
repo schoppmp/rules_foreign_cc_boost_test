@@ -1,0 +1,6 @@
+simple.a: ./src/simple.cc
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ -c $< -I./include -I.
+install: simple.a
+	mkdir -p simple/lib
+	cp $< ./simple/lib/
+	cp -r ./include ./simple
